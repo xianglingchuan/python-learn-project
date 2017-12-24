@@ -293,7 +293,7 @@ cls.count 实际上相当于 Person.count。
 #和属性类似，方法也分实例方法和类方法。
 class Person(object):
     count = 0
-    #类型的类的静态方法
+    #类拟的类的静态方法
     @classmethod
     def how_many(cls):
         return cls.count
