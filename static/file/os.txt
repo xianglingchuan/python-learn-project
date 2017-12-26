@@ -1,0 +1,1 @@
+os.open(filename, flag, model)
