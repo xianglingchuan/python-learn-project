@@ -1,0 +1,6 @@
+$def with(gname, fname, accountList)
+    Hi, $(gname) $(fname)
+
+<BR><BR><BR><BR><BR>
+$for account in accountList:
+    帐户ID: $account[0] ===== 帐户金额: $account[1]<BR>

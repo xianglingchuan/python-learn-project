@@ -1,0 +1,60 @@
+$def with (toUser,fromUser,createTime,articleCnt,articles)
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>内容展示</h1>
+<div style="font-size: 14px; line-height: 39px;">
+toUser: ${toUser}<BR>
+fromUser: ${fromUser}<BR>
+createTime: ${createTime}<BR>
+articleCnt: ${articleCnt}<BR>
+
+$if len(articles) >=1:
+     $for article in articles:
+          标题: $article['title']
+          内容: $article['desc']
+          <BR>
+$else:
+     文章内容为空
+
+</div>
+
+
+<h1>函数-\$def 定义函数</h1>
+$def myhello(name):
+    print "hello $name"
+<div style="font-size: 14px; line-height: 39px;">
+$myhello("Lili")
+</div>
+
+
+
+
+
+<h1>输出程序代码-\$code块</h1>
+$code:
+    x=10
+    def print_num(num):
+        return "Num is %d" % num;
+<div style="font-size: 14px; line-height: 39px;">
+$print_num(10);
+</div>
+
+
+
+
+
+<h1>\$var - 测试失败</h1>
+\$var vara: this is vara
+<div style="font-size: 14px; line-height: 39px;">
+\$vara;
+</div>
+
+
+</body>
+</html>
