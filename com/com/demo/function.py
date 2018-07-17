@@ -9,6 +9,9 @@ print (s);
 ss = ['1','2','3'];
 print (ss);
 
+
+
+
 r1 = 12.34
 r2 = 9.08
 r3 = 73.1
@@ -176,3 +179,4 @@ def average(*args):
 print average();
 print average(1, 2)
 print average(1, 2, 2, 3, 4)
+
