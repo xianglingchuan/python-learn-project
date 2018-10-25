@@ -21,7 +21,7 @@ class index:
 
 class blog:
     def GET(self):
-        print "获取GET提交数据:";
+        print ("获取GET提交数据:")
         print web.input();
         return "blog method";
 
