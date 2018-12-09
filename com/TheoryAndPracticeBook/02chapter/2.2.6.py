@@ -18,6 +18,5 @@ class SubDog(BaseAnimal):
     def talk(self):
         BaseAnimal.speak(self);
         print("我的名字是[%s],今年[%d]岁, 我想说:%s" % (self.name, self.age, self.say));
-
 ani = SubDog("dog", 2, "汪汪.....");
 ani.talk();
