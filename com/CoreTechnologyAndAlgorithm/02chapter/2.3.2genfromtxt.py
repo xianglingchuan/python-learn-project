@@ -11,9 +11,6 @@ print("====================================");
 
 
 
-
-
-
 f = open("test.csv", 'w');
 f.write("1, 1.2, 1.3\n2,2.2,2.3\n字符串,xlc,33");
 f.close();
@@ -61,8 +58,5 @@ f.close()
 a = np.genfromtxt('test03.csv', dtype=[('myint', 'i8'), ('myfloat', 'f8'), ('mystring', 'U5')], delimiter=",",
                   comments='#',
                   filling_values={0:9, 1:9.9, 2:'abc'})
-print(a)
-
-
-
+print(a);
 #SciPy练习在项目中
